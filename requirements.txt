@@ -3,4 +3,3 @@ scikit-learn
 nltk
 flask 
 Gunicorn
-os
