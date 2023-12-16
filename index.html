@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+        position: relative;
+        background-color: black;
+      }
+      h2 {
+        margin-bottom: 35px;
+        color: white;
+      }
+
+      h4 {
+        height: 23px;
+        width: 99%;
+        position: absolute;
+        top: 20px;
+        left: 5px;
+    
+        color: white;
+      }
+      input {
+        height: 120px;
+        width: 99%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: grey;
+      }
+      .predict {
+        width: 80px;
+        height: 40px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .pd{
+        color: white;
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Email/SMS Classifier</h2>
+   
+    <h4>Enter the text</h4>
+    <form method="post" action="/predict"> 
+    <input type="text" name ="text" />
+    <input class = "predict" type ="submit" value ="Predict">
+    
+    <div >
+      {% if result %}
+      <p class="pd" >{{ result }}</p>
+      {% endif%}
+    </div>
+    
+</form>
+  </body>
+</html>
