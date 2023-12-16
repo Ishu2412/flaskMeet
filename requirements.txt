@@ -3,5 +3,4 @@ scikit-learn
 nltk
 flask 
 Gunicorn
-pickle
 os
