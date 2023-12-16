@@ -1,11 +1,5 @@
-streamlit
-pandas
 numpy
-seaborn
 scikit-learn
-wordcloud
 nltk
-pickle
 flask 
-os
 Gunicorn
