@@ -4,8 +4,8 @@ import pickle
 import numpy as np
 
 # Load the model and vectorizer outside of the route to avoid reloading on each request
-model_path = 'C:\\Users\\Hp\\.vscode\\extensions\\python_project2\\model.pkl'
-vectorizer_path = 'C:\\Users\\Hp\\.vscode\\extensions\\python_project2\\vectorizer.pkl'
+model_path = 'model.pkl'
+vectorizer_path = 'vectorizer.pkl'
 
 print("Model Path:", model_path)
 model = pickle.load(open(model_path, 'rb'))
